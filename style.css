@@ -1,0 +1,282 @@
+/* Seção Hero */
+.hero {
+    position: relative;
+    min-height: 100vh;
+    min-width: 100vw;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('https://sm.ign.com/ign_br/screenshot/default/blob_5d5n.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+.hero h1 {
+    font-size: 5rem;
+    padding-top: 15%;
+    color: rgb(255, 0, 0);
+    text-shadow: 8px 4px 4px rgb(0, 0, 0) !important;
+    text-align: center;
+}
+
+.hero p {
+    font-size: 3rem;
+    margin: 0%;
+    color: rgb(255, 0, 0);
+    padding-top: 5%;
+    text-shadow: 4px 2px 2px rgb(0, 0, 0) !important;
+    text-align: center;
+}
+
+/* Seção Header */
+.custom-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: relative;
+    z-index: 1000;
+}
+
+.custom-title {
+    background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/14205259-3456-4d74-8583-1a0f2736b41c/dep78an-b527a6b3-d07d-4c4f-818f-e8bc5b300a75.png/v1/fill/w_958,h_834/omega_symbol__god_of_war_2018__by_rootofalllight_dep78an-pre.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTExNCIsInBhdGgiOiJcL2ZcLzE0MjA1MjU5LTM0NTYtNGQ3NC04NTgzLTFhMGYyNzM2YjQxY1wvZGVwNzhhbi1iNTI3YTZiMy1kMDdkLTRjNGYtODE4Zi1lOGJjNWIzMDBhNzUucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.P4cY0Aojx7CqO43MfTr6mNMRAldo4eFeClvd9Pm6A78');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left center;
+    flex: 1;
+}
+
+.custom-title h1 {
+    color: rgb(255, 255, 255);
+    text-shadow: 6px 2px 2px rgb(0, 0, 0);
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: 120px; 
+}
+
+.menu-container {
+    display: flex;
+    align-items: center;
+}
+
+.custom-btn {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    border: 2px solid rgb(255, 0, 0);
+    padding: 10px 20px;
+    font-weight: bold;
+    font-family: 'Arial', sans-serif;
+    text-transform: uppercase;
+    border-radius: 10px;
+    transition: background-color 0.3s, border 0.3s;
+}
+
+.custom-btn:hover {
+    background-color: rgba(255, 0, 0, 0.8);
+    border-color: rgba(61, 51, 51, 0.6);
+    color: black;
+}
+
+.estilo-menu {
+    background-color: rgb(0, 0, 0);
+    color: rgb(253, 253, 253);
+}
+
+.dropdown-item:hover {
+    background-color: rgba(255, 0, 0, 0.8);
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .custom-header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .custom-title h1 {
+        font-size: 2rem;
+        margin-left: 80px; 
+    }
+
+    .menu-container {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .custom-title h1 {
+        font-size: 1.5rem;
+        margin-left: 60px; 
+    }
+
+    .custom-btn {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+}
+
+.imagem-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+/* Seção Sinopse */
+.quadrado {
+    background-image: url("https://s.zst.com.br/cms-assets/2023/01/kratos-capa.webp");
+    background-size: cover;
+    background-position: center;
+    width: 1000px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 5%;
+    margin-top: -100px;
+}
+
+
+.quadrado h2 {
+    margin-bottom: 0px;
+    text-shadow: 2px 2px 2px rgb(255, 0, 0);
+    text-align: justify;
+    color: rgb(0, 0, 0) !important;
+    font-weight: bold;
+    text-align: center;
+    margin-left: 10px;
+    padding-top: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.quadrado p {
+    font-size: 30px;
+    color: rgb(255, 0, 0) !important;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0) !important;
+    text-align: center;
+    padding-top: 40px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Seção Elenco */
+.personagem {
+    font-size: 15px;
+    color: rgb(98, 98, 98);
+}
+
+.elenco {
+    padding-top: 25px;
+    padding-left: 10px;
+    display: flex;
+    gap: 60px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    flex: 0 0 auto;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.custom-title2 {
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 2px rgb(255, 0, 0);
+    color: rgb(255, 255, 255) !important;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.705);
+    border-radius: 10px;
+    display: inline-block;
+    text-align: center;
+
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10% auto 20px; 
+    width: fit-content; 
+}
+
+
+@media (max-width: 768px) {
+    .custom-title2 {
+        margin-top: 5%; 
+        font-size: 1.5rem; 
+        padding: 8px 16px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .custom-title2 {
+        margin-top: 3%; 
+        font-size: 1.2rem; 
+        padding: 6px 12px; 
+    }
+}
+
+/* Seção Trailer */
+.container-video {
+    padding-top: 30px !important;
+    max-width: 80%;
+    margin: 0 auto;
+    border-radius: 20px !important;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+
+/* Seção Curiosidade */
+.cardcuriosidade {
+    padding: 100px;
+    margin-top: -5%;
+}
+
+.accordion-item {
+    background-color: rgba(0, 0, 0, 0.7) !important;
+    color: white;
+    border: 2px solid rgb(255, 0, 0);
+}
+
+.accordion-button {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: rgba(255, 0, 0, 0.514);
+    color: black;
+}
+
+.accordion-body {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: rgb(0, 0, 0);
+}
+
+/* Adaptar a largura da página */
+html,
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
